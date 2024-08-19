@@ -1,0 +1,11 @@
+{
+  "entities": [ {
+    "value": "call",
+    "synonyms": [ "call", "phone call" ],
+    "languageCode": "en"
+  }, {
+    "value": "text",
+    "synonyms": [ "message", "sms", "text" ],
+    "languageCode": "en"
+  } ]
+}

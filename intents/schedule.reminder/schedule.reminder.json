@@ -1,0 +1,10 @@
+{
+  "name": "a2f932cc-7d9e-4868-a961-20431beb8006",
+  "displayName": "schedule.reminder",
+  "parameters": [ {
+    "id": "ReminderType",
+    "entityType": "@ReminderType"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 5
+}

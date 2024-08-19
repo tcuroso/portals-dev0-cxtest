@@ -1,0 +1,35 @@
+{
+  "name": "5ea2144a-60f8-490e-a900-f4c7077aa39f",
+  "displayName": "Postpone Service",
+  "form": {
+    "parameters": [ {
+      "displayName": "PostponementDate",
+      "required": true,
+      "entityType": "@sys.date",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "please say the date you would like to postpone your service to. " ]
+            },
+            "languageCode": "en"
+          } ]
+        }
+      }
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$page.params.status = \"FINAL\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Postponement Confirmation",
+    "name": "e91449cc-0646-4efd-9d1c-9d7a57ccc6fd"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "name": "e4e0c4a1-bb90-4284-913c-ca3a1795ad32"
+  } ]
+}

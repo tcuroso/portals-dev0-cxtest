@@ -1,0 +1,10 @@
+{
+  "name": "b82af141-5b4f-4c49-8842-ca38e889c616",
+  "displayName": "postponement",
+  "parameters": [ {
+    "id": "date",
+    "entityType": "@sys.date"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 9
+}

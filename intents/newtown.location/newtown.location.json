@@ -1,0 +1,10 @@
+{
+  "name": "b9ae3cff-8dbd-43b0-a917-0b78bdd09727",
+  "displayName": "newtown.location",
+  "parameters": [ {
+    "id": "geo-city",
+    "entityType": "@sys.geo-city"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 5
+}

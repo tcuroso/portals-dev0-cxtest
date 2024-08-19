@@ -1,0 +1,37 @@
+{
+  "name": "07474180-3a66-401f-bed6-2d52db2df5ef",
+  "displayName": "City Hall Directions",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "The office is located at 455 Wayne Boulevard in Gotham. Driving directions to the courthouse are as follows. Take the outer loop freeway to the Wayne Boulevard City Hall exit and continue north on Wayne Boulevard. " ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "goodbye",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Flow",
+    "name": "30b1f35b-6993-413c-b085-468e8957d4c3"
+  }, {
+    "intent": "main.menu",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Main Menu",
+    "name": "07088c14-9a25-45dd-a9e8-8f0b98ff921c"
+  }, {
+    "intent": "repeat",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Current Page",
+    "name": "71de1c2e-be3b-4de4-be9e-ed0d57444b2c"
+  } ]
+}

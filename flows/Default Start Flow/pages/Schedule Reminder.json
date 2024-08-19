@@ -1,0 +1,49 @@
+{
+  "name": "2ee2ad0d-4bdf-440e-a5b5-83e449dadcde",
+  "displayName": "Schedule Reminder",
+  "form": {
+    "parameters": [ {
+      "displayName": "ReminderType",
+      "required": true,
+      "entityType": "@ReminderType",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Would you like to receive a text message, or a call?" ]
+            },
+            "languageCode": "en"
+          } ]
+        }
+      }
+    }, {
+      "displayName": "ReminderNumber",
+      "required": true,
+      "entityType": "@sys.phone-number",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Please speak the 10 digit phone number where you can receive the reminder. " ]
+            },
+            "languageCode": "en"
+          } ]
+        }
+      }
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$page.params.status = \"FINAL\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Reminder Confirmation",
+    "name": "96657473-3eb0-47b4-97eb-88006cdda78a"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "name": "9b59b6b7-0373-4824-a602-4575afcd7510"
+  } ]
+}

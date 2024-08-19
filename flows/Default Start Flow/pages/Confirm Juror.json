@@ -1,0 +1,48 @@
+{
+  "name": "e85e9a3f-74de-4dbd-b4c4-03be27c2cd6e",
+  "displayName": "Confirm Juror",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "\u003cspeak\u003eI found juror Buster Posey, badge number \u003csay-as interpret-as =\"characters\"\u003e $session.params.BadgeNumber\u003c/say-as\u003e. Is this correct?\u003c/speak\u003e" ]
+      },
+      "languageCode": "en"
+    } ],
+    "nextActionOverride": {
+    
+    }
+  },
+  "transitionRoutes": [ {
+    "intent": "No",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "OK, let's try again." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "$session.params.BadgeNumber",
+        "value": null
+      }, {
+        "parameter": "$session.params.PIN",
+        "value": null
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetPage": "Lookup Juror",
+    "name": "f99461d4-7190-4783-90a4-1107c2aaf738"
+  }, {
+    "intent": "Yes",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Juror Status",
+    "name": "2987ef04-9ba8-4473-8e69-faf99509ca77"
+  } ]
+}

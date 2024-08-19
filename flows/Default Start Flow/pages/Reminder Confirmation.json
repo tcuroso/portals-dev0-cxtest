@@ -1,0 +1,37 @@
+{
+  "name": "dd31766d-189f-4269-8845-0684133be162",
+  "displayName": "Reminder Confirmation",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "You will receive a reminder at $session.params.ReminderNumber on the day before your jury service. " ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "goodbye",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Flow",
+    "name": "4b6b4441-391a-490d-8c0b-3b3f3d3fe1b6"
+  }, {
+    "intent": "main.menu",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Main Menu",
+    "name": "8df9822a-a4f4-4705-8798-156b11608a9e"
+  }, {
+    "intent": "repeat",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Current Page",
+    "name": "ece6e0d7-c679-4d03-a22f-ab6c28bcb2cf"
+  } ]
+}

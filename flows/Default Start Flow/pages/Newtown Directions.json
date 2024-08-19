@@ -1,0 +1,37 @@
+{
+  "name": "12beff28-a1d8-41b5-835b-72011451c121",
+  "displayName": "Newtown Directions",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "The office is located at 1333 Dent Street in Gotham. Driving directions to the courthouse are as follows. Take the north freeway to the Gordon Street exit, in tow blocks turn right onto Dent street and continue north. " ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "goodbye",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Flow",
+    "name": "f0e31a41-e05b-4edb-930c-e761e74e4440"
+  }, {
+    "intent": "repeat",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Current Page",
+    "name": "aaa4d977-684f-40d3-89cd-038f42590db5"
+  }, {
+    "intent": "main.menu",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Main Menu",
+    "name": "4da80ed0-3fb7-4510-ba68-0d2d0cbf765d"
+  } ]
+}

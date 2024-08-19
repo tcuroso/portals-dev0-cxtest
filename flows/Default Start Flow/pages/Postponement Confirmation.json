@@ -1,0 +1,37 @@
+{
+  "name": "3ff0fe10-d720-439a-8881-a77054ea451a",
+  "displayName": "Postponement Confirmation",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Your service has been postponed to $session.params.PostponementDate. " ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "main.menu",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Main Menu",
+    "name": "be89f7d8-8186-4951-8fd7-10a33ebb9666"
+  }, {
+    "intent": "repeat",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Current Page",
+    "name": "787d2dc8-103e-48f8-9b04-2dbe5dfd4cbd"
+  }, {
+    "intent": "goodbye",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Flow",
+    "name": "158c6bae-11ff-4b74-b134-bf11f392cd07"
+  } ]
+}

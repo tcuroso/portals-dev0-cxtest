@@ -1,0 +1,73 @@
+{
+  "name": "f51027c7-0899-49c7-9a22-6ea12c176ae9",
+  "displayName": "Lookup Juror",
+  "form": {
+    "parameters": [ {
+      "displayName": "BadgeNumber",
+      "required": true,
+      "entityType": "@BadgeNumber",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Can I get your badge number? it is located on the bottom right of your summons. " ]
+            },
+            "languageCode": "en"
+          } ]
+        }
+      }
+    }, {
+      "displayName": "PIN",
+      "required": true,
+      "entityType": "@PIN",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Please tell me your four digit PIN. " ]
+            },
+            "languageCode": "en"
+          } ]
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "OK. Let's get your juror status" ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "main.menu",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Main Menu",
+    "name": "a4ed593c-5e9b-49ce-bf90-40068ca34dd0"
+  }, {
+    "intent": "repeat",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Current Page",
+    "name": "0539751e-35e0-4286-bd75-988b06518959"
+  }, {
+    "condition": "$page.params.status = \"FINAL\"",
+    "triggerFulfillment": {
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetPage": "Confirm Juror",
+    "name": "80b1c88a-d584-4b12-b10d-bdeabaf5b9f6"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "name": "e2eed6df-303a-47f0-ace3-b65f923c099e"
+  } ]
+}

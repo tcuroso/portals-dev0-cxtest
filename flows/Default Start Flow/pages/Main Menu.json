@@ -1,0 +1,94 @@
+{
+  "name": "44840458-db91-4298-9a24-766e3c1f114c",
+  "displayName": "Main Menu",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "What can I help you with today?" ]
+      },
+      "languageCode": "en"
+    } ],
+    "nextActionOverride": {
+    
+    }
+  },
+  "transitionRoutes": [ {
+    "intent": "cityhall.location",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "City Hall Directions",
+    "name": "abc2d9bf-c892-4533-aa38-ac9f94e761fc"
+  }, {
+    "intent": "courthouse.locations",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Locations and Directions",
+    "name": "494514c1-9d52-4dde-97bd-fc23e8d72586"
+  }, {
+    "intent": "goodbye",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Flow",
+    "name": "ddc28535-e4d3-4b72-8f9c-39e0c39565b8"
+  }, {
+    "intent": "lookup.juror",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Lookup Juror",
+    "name": "0643310d-06ed-4b53-aaad-1c5fe7ff35f8"
+  }, {
+    "intent": "newtown.location",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Newtown Directions",
+    "name": "7279965a-bccf-48f6-88e7-a850722eb5a2"
+  }, {
+    "intent": "office.hours",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Office Hours",
+    "name": "000f54f0-e6e4-485c-a102-d2dc1d863eb3"
+  }, {
+    "intent": "postponement",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "origination",
+        "value": "Postponement"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetPage": "Lookup Juror",
+    "name": "517e7f47-8531-41b0-80eb-2c91c96ff994"
+  }, {
+    "intent": "repeat",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Main Menu",
+    "name": "73d474e1-d2d2-4dc6-bea8-84ae4af70d67"
+  }, {
+    "intent": "schedule.reminder",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "origination",
+        "value": "reminder"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetPage": "Schedule Reminder",
+    "name": "a0e1157b-ec20-45b2-b282-0293289f6c1d"
+  } ]
+}

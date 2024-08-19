@@ -1,0 +1,36 @@
+{
+  "name": "3c91fbe0-58ec-4649-99fa-aee2f03e2e1f",
+  "displayName": "Locations and Directions",
+  "form": {
+    "parameters": [ {
+      "displayName": "CourthouseName",
+      "required": true,
+      "entityType": "@sys.location",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Would you like information on the City Hall or Newtown courthouse?" ]
+            },
+            "languageCode": "en"
+          } ]
+        }
+      }
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "cityhall.location",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "City Hall Directions",
+    "name": "b96332dc-10ac-485a-aff5-c87fc574e7c9"
+  }, {
+    "intent": "newtown.location",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Newtown Directions",
+    "name": "69a90614-be9b-4d34-8ffd-fbe0e9f54f62"
+  } ]
+}

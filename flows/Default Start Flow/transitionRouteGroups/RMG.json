@@ -1,0 +1,26 @@
+{
+  "name": "b30372a4-a3af-4e0f-bb3b-5a994aeb6b3e",
+  "displayName": "RMG",
+  "transitionRoutes": [ {
+    "intent": "goodbye",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Session",
+    "name": "e10536a6-b2be-4279-853e-4415b704e7d0"
+  }, {
+    "intent": "main.menu",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Start Page",
+    "name": "09658af9-ed0f-4dd4-b7ba-4af3381cc3e7"
+  }, {
+    "intent": "repeat",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Current Page",
+    "name": "a6db439d-e22a-4260-ae2d-e6337f7830c3"
+  } ]
+}

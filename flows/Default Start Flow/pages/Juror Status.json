@@ -1,0 +1,68 @@
+{
+  "name": "7fc2c771-e905-453f-a5bd-ff7653f67030",
+  "displayName": "Juror Status",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "\u003cspeak\u003eBuster Posey, badge number \u003csay-as interpret-as=\"character\"\u003e$session.params.BadgeNumber\u003c/say-as\u003e, is is scheduled for jury service on October 1st, 2024. You can schedule a reminder, get courthouse information, or postpone your jury service.\u003c/speak\u003e" ]
+      },
+      "languageCode": "en"
+    } ],
+    "nextActionOverride": {
+    
+    }
+  },
+  "transitionRoutes": [ {
+    "intent": "goodbye",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Session",
+    "name": "6368e248-eea7-45ae-ae7b-4bcddb7c527e"
+  }, {
+    "intent": "repeat",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Juror Status",
+    "name": "8a81006b-8465-4514-a038-7ad23383fe58"
+  }, {
+    "intent": "main.menu",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Main Menu",
+    "name": "10ce4302-d037-4dc4-84bc-d75b18712a28"
+  }, {
+    "intent": "schedule.reminder",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Schedule Reminder",
+    "name": "1599dc2f-deaf-4105-9cf1-315f62f3118e"
+  }, {
+    "intent": "postponement",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Postpone Service",
+    "name": "24f6cfc6-8c86-4e0e-8941-91be67f5f9c0"
+  }, {
+    "condition": "$session.params.origination = postponement",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Postpone Service",
+    "name": "a5396145-833a-4b07-a08c-826864582151"
+  }, {
+    "condition": "$session.params.origination = reminder",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Schedule Reminder",
+    "name": "63b7871b-58cf-47c3-89e9-1d702e0e08e7"
+  } ]
+}

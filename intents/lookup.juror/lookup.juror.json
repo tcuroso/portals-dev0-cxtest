@@ -1,0 +1,13 @@
+{
+  "name": "c76267aa-0d0c-44b8-89bc-ea6cfbadaf36",
+  "displayName": "lookup.juror",
+  "parameters": [ {
+    "id": "BadgeNumber",
+    "entityType": "@BadgeNumber"
+  }, {
+    "id": "PIN",
+    "entityType": "@PIN"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 12
+}
