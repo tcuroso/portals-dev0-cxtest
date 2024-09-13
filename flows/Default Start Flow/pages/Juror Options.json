@@ -1,0 +1,82 @@
+{
+  "name": "858be457-6bb8-4f30-9db8-336b0b05593d",
+  "displayName": "Juror Options",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "\u003cspeak\u003eYou can schedule a reminder for your jury service, get courthouse locations and directions, or request a postponement of your jury service. \u003cbreak time=\"5s\"/\u003e What would you like to do?\u003c/speak\u003e" ]
+      },
+      "languageCode": "en"
+    } ],
+    "nextActionOverride": {
+    
+    }
+  },
+  "transitionRoutes": [ {
+    "intent": "cityhall.location",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "City Hall Directions",
+    "name": "3eb045e2-ccd0-4b03-aebb-7fcee3e8fb54"
+  }, {
+    "intent": "courthouse.locations",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Locations and Directions",
+    "name": "506fd4ec-ce0f-4002-a6f7-fb10cfc2b51f"
+  }, {
+    "intent": "newtown.location",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Newtown Directions",
+    "name": "a455feb2-628a-4a4f-b7ac-9d2ca5affb0e"
+  }, {
+    "intent": "office.hours",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Office Hours",
+    "name": "86f708c7-c9a8-46b0-848c-e8d94a6e5382"
+  }, {
+    "intent": "schedule.reminder",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Schedule Reminder",
+    "name": "0ab04a35-19ae-411d-a41b-4edb32aa058a"
+  }, {
+    "intent": "postponement",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Postpone Service",
+    "name": "e3966930-6d51-455a-9e3e-359d1fefbc84"
+  }, {
+    "intent": "repeat",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Juror Status",
+    "name": "db68f8c2-bb46-4aec-b551-3e33e5aa39b7"
+  }, {
+    "intent": "main.menu",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Main Menu",
+    "name": "be394015-dda4-4430-83fe-eb6953fa2b81"
+  }, {
+    "intent": "goodbye",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Session",
+    "name": "e0a02580-63f5-4db5-84a2-2e3e90c04a0a"
+  } ]
+}

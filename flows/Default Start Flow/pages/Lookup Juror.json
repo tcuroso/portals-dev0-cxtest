@@ -10,10 +10,13 @@
         "initialPromptFulfillment": {
           "messages": [ {
             "text": {
-              "text": [ "Can I get your badge number? it is located on the bottom right of your summons. " ]
+              "text": [ "\u003cspeak\u003eCan I get your badge number?\u003cbreak time=\"3s\"/\u003e Your badge number is located on the bottom right of your summons. \u003c/speak\u003e" ]
             },
             "languageCode": "en"
-          } ]
+          } ],
+          "nextActionOverride": {
+          
+          }
         }
       }
     }, {
@@ -33,12 +36,51 @@
     } ]
   },
   "entryFulfillment": {
-    "messages": [ {
-      "text": {
-        "text": [ "OK. Let's get your juror status" ]
-      },
-      "languageCode": "en"
-    } ]
+    "conditionalCases": [ {
+      "cases": [ {
+        "condition": "$session.params.Origination = \"JurorStatus\"",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "OK. Let's get your juror status." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.Origination = \"Postponement\"",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "to get started on your postponement, we need to get your juror status." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "condition": "$session.params.Origination = \"Reminder\"",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "to get started with a reminder call, we need to get your juror status." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "OK. Let's get your juror status." ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      } ]
+    } ],
+    "nextActionOverride": {
+    
+    }
   },
   "transitionRoutes": [ {
     "intent": "main.menu",
@@ -69,5 +111,24 @@
     
     },
     "name": "e2eed6df-303a-47f0-ace3-b65f923c099e"
-  } ]
+  } ],
+  "advancedSettings": {
+    "dtmfSettings": {
+      "enabled": true,
+      "finishDigit": "#",
+      "useSystemEntityRule": false,
+      "interdigitTimeoutDuration": {
+        "seconds": 5
+      },
+      "endpointingTimeoutDuration": {
+        "seconds": 5
+      }
+    },
+    "speechAdaptationSettings": {
+    
+    }
+  },
+  "speakerIdSettings": {
+  
+  }
 }

@@ -1,6 +1,71 @@
 {
   "trainingPhrases": [ {
     "parts": [ {
+      "text": "reminder ",
+      "auto": true
+    }, {
+      "text": "message",
+      "parameterId": "ReminderType",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "reminder ",
+      "auto": true
+    }, {
+      "text": "sms",
+      "parameterId": "ReminderType",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "reminder ",
+      "auto": true
+    }, {
+      "text": "text",
+      "parameterId": "ReminderType",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "reminder ",
+      "auto": true
+    }, {
+      "text": "call",
+      "parameterId": "ReminderType",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "schedule a reminder",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "can I schedule a reminder",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I need a reminder",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
       "text": "reminder",
       "auto": true
     } ],

@@ -7,7 +7,7 @@
   "entryFulfillment": {
     "messages": [ {
       "text": {
-        "text": [ "What can I help you with today?" ]
+        "text": [ "\u003cspeak\u003eWhat can I help you with today? \u003cbreak time=\"3s\"/\u003eYou can look up your juror status, or get information.\u003c/speak\u003e" ]
       },
       "languageCode": "en"
     } ],
@@ -39,7 +39,13 @@
   }, {
     "intent": "lookup.juror",
     "triggerFulfillment": {
-    
+      "setParameterActions": [ {
+        "parameter": "Origination",
+        "value": "JurorStatus"
+      } ],
+      "nextActionOverride": {
+      
+      }
     },
     "targetPage": "Lookup Juror",
     "name": "0643310d-06ed-4b53-aaad-1c5fe7ff35f8"
@@ -61,7 +67,7 @@
     "intent": "postponement",
     "triggerFulfillment": {
       "setParameterActions": [ {
-        "parameter": "origination",
+        "parameter": "Origination",
         "value": "Postponement"
       } ],
       "nextActionOverride": {
@@ -81,14 +87,22 @@
     "intent": "schedule.reminder",
     "triggerFulfillment": {
       "setParameterActions": [ {
-        "parameter": "origination",
-        "value": "reminder"
+        "parameter": "Origination",
+        "value": "Reminder"
       } ],
       "nextActionOverride": {
       
       }
     },
-    "targetPage": "Schedule Reminder",
+    "targetPage": "Lookup Juror",
     "name": "a0e1157b-ec20-45b2-b282-0293289f6c1d"
-  } ]
+  } ],
+  "advancedSettings": {
+    "speechAdaptationSettings": {
+    
+    }
+  },
+  "speakerIdSettings": {
+  
+  }
 }

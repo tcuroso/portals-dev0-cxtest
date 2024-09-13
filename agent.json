@@ -11,18 +11,20 @@
   "advancedSettings": {
     "enabled": true,
     "audioExportGcsDestination": {
-    
+      "uri": "portals-dev0-cxtest-audio/jury-cxconnect"
     },
     "speechSettings": {
       "endpointerSensitivity": 90,
       "noSpeechTimeout": {
-        "seconds": 5
+        "seconds": 3
       },
+      "useTimeoutBasedEndpointing": true,
       "models": [ {
         "key": "en",
         "value": "telephony_short"
       } ],
-      "overrideRequestSpeechModel": true
+      "overrideRequestSpeechModel": true,
+      "enableSmartEndpointing": true
     },
     "playbackInterruptionSettings": {
       "allowPlaybackInterruption": true

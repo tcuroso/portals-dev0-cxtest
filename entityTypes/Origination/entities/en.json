@@ -1,0 +1,15 @@
+{
+  "entities": [ {
+    "value": "JurorStatus",
+    "synonyms": [ "JurorStatus" ],
+    "languageCode": "en"
+  }, {
+    "value": "Postponement",
+    "synonyms": [ "Postponement" ],
+    "languageCode": "en"
+  }, {
+    "value": "Reminder",
+    "synonyms": [ "Reminder" ],
+    "languageCode": "en"
+  } ]
+}
