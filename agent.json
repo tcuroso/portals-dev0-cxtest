@@ -42,7 +42,7 @@
       "key": "en",
       "value": {
         "voice": {
-          "name": "en-US-Neural2-D",
+          "name": "en-US-Standard-J",
           "ssmlGender": "SSML_VOICE_GENDER_MALE"
         }
       }

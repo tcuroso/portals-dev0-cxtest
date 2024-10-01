@@ -1,0 +1,7 @@
+{
+  "name": "ec5365b6-4f17-4a24-b38a-1aa7ab07c2b3",
+  "displayName": "information",
+  "priority": 500000,
+  "description": "generic information request for generator",
+  "numTrainingPhrases": 3
+}

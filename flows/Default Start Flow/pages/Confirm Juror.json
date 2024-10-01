@@ -26,10 +26,13 @@
       } ],
       "setParameterActions": [ {
         "parameter": "$session.params.BadgeNumber",
-        "value": "$null"
+        "value": null
       }, {
         "parameter": "$session.params.PIN",
-        "value": "$null"
+        "value": null
+      }, {
+        "parameter": "$session.params.Retry",
+        "value": "true"
       } ],
       "nextActionOverride": {
       

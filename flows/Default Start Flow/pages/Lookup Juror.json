@@ -38,6 +38,16 @@
   "entryFulfillment": {
     "conditionalCases": [ {
       "cases": [ {
+        "condition": "$session.params.Retry = \"True\"",
+        "caseContent": [ {
+          "message": {
+            "text": {
+              "text": [ "OK, Let's try again" ]
+            },
+            "languageCode": "en"
+          }
+        } ]
+      }, {
         "condition": "$session.params.Origination = \"JurorStatus\"",
         "caseContent": [ {
           "message": {

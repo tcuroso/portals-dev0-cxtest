@@ -96,6 +96,25 @@
     },
     "targetPage": "Lookup Juror",
     "name": "a0e1157b-ec20-45b2-b282-0293289f6c1d"
+  }, {
+    "intent": "information",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "$request.generative." ]
+        },
+        "languageCode": "en"
+      } ],
+      "generators": [ {
+        "generator": "projects/portals-dev0-cxtest/locations/us-west1/agents/80c08e2b-97ea-45f8-8c54-42cefb62d2b6/generators/8b62174d-7858-475e-9d32-f485d561d7cf",
+        "outputParameter": "$request.generative."
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetPage": "Main Menu",
+    "name": "3919c19e-34e1-48e0-b5fe-cc7452b6f70e"
   } ],
   "advancedSettings": {
     "speechAdaptationSettings": {

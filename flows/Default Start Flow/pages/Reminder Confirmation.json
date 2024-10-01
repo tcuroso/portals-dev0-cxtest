@@ -7,10 +7,18 @@
   "entryFulfillment": {
     "messages": [ {
       "text": {
-        "text": [ "You will receive a reminder at $session.params.ReminderNumber on the day before your jury service. " ]
+        "text": [ "You will receive a reminder at $session.params.ReminderNumber on the day before your jury service." ]
       },
       "languageCode": "en"
-    } ]
+    }, {
+      "text": {
+        "text": [ "Is there anything else I can help you with? You can say repeat, main menu, or goodbye to hang up. You can also get directions or office hours. " ]
+      },
+      "languageCode": "en"
+    } ],
+    "nextActionOverride": {
+    
+    }
   },
   "transitionRoutes": [ {
     "intent": "goodbye",
@@ -33,5 +41,19 @@
     },
     "targetPage": "Current Page",
     "name": "ece6e0d7-c679-4d03-a22f-ab6c28bcb2cf"
+  }, {
+    "intent": "office.hours",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Office Hours",
+    "name": "4ff85f56-8e6c-43a6-9231-eeabb3619e98"
+  }, {
+    "intent": "courthouse.locations",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Locations and Directions",
+    "name": "3c391f70-538a-490d-b178-4e5e149142c9"
   } ]
 }
